@@ -5,6 +5,7 @@ const icon = document.getElementById("mainImg");
 
 const btn = document.querySelector(".input button");
 const search = document.querySelector(".input input");
+const searchForm = document.querySelector(".input");
 
 
 async function find(city) {
@@ -35,8 +36,15 @@ async function find(city) {
 }
 
 
-btn.addEventListener("click", ()=>{
+searchForm.addEventListener("submit", (e)=>{
+   e.preventDefault();
     console.log("button clicked");
-    find(search.value);
+    if(search.value.trim()===""){
+      alert("Enter the city name");
+    }
+    else{
+    find(search.value.trim());
+    search.value= "";
+    }
 });
 
