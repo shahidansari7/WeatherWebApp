@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(90deg,blue, pink);
+}
+.container{
+    width: 42vh;
+    max-width: 540px;
+    align-items: center;
+    margin: 100px auto 0px;
+    background-color: white;
+    padding: 30px;
+    height: 450px;
+}
+img{
+    width: 150px;
+    padding-left: 40px;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.humidity img{
+    width: 30px;
+}
+.wind img{
+    width: 50px;
+}
+.humidity{
+    display: flex;
+    text-align: left;
+}
+.wind{
+    display: flex;
+    text-align: right;
+}
